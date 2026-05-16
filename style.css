@@ -91,32 +91,28 @@ body{
    HERO
 ========================= */
 .hero{
-  height:330px;
-  background:
-  linear-gradient(rgba(0,0,0,0.45),
-  rgba(0,0,0,0.45)),
-  url("images/coffee-bg.jpg");
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  align-items:center;
-  padding:30px;
+    height: 500px;
+    background-image: url('coffee-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 60px;
+    color: white;
 }
 
-.hero-text h1{
-  font-family:'Oswald', sans-serif;
-  font-size:54px;
-  line-height:1.05;
-  letter-spacing:1px;
-  margin-bottom:10px;
+.hero h1{
+    font-size: 70px;
+    font-weight: bold;
 }
 
-.hero-text p{
-  font-size:40px;
-  color:#b27a54;
-  font-family:cursive;
+.hero p{
+    font-size: 40px;
+    color: #b67b5c;
 }
-
 /* =========================
    MENU SECTION
 ========================= */
