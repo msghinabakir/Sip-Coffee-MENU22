@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sip Coffee</title>
+
+  <!-- ملف css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- خط -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- أيقونات -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+
+<div class="phone-menu">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+   <div class="logo">
+  <img src="images/coffee-bg-logo.png" alt="logo">
+</div>
+
+    <ul class="nav-links">
+  <li class="active">MENU</li>
+</ul>
+
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>GOOD COFFEE<br>GOOD DAY</h1>
+      <p>Made with love</p>
+    </div>
+
+  </section>
+
+
+
+  <!-- MENU SECTION -->
+  <section class="menu-section">
+
+    <h2>OUR MENU</h2>
+  <!-- ================================ قسم الاول -=====================================-->
+    <div class="menu-item">
+      <div class="menu-left">
+
+        <i class="fa-solid fa-mug-hot"></i>
+
+        <div>
+          <h3>COFFEE</h3>
+          <p>Espresso, Ristretto, Lungo...</p>
+        </div>
+
+      </div>
+
+   <button onclick="openModal('coffeeModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+  <!-- ================================ قسم الثاني -=====================================-->
+
+    <div class="menu-item">
+      <div class="menu-left">
+
+        <i class="fa-solid fa-glass-water"></i>
+
+        <div>
+          <h3> HOT DRINKS  </h3>
+          <p>Tea, Green Tea, Ginger...</p>
+        </div>
+
+      </div>
+
+    <button onclick="openModal('hotModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+  <!-- ================================ قسم 3 -=====================================-->
+
+    <div class="menu-item">
+      <div class="menu-left">
+
+        <i class="fa-solid fa-leaf"></i>
+
+        <div>
+          <h3>LATTE </h3>
+          <p>Caramel Latte, Hazelnut Latte...</p>
+        </div>
+
+      </div>
+
+   <button onclick="openModal('latteModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+  <!-- ================================ قسم 4 -=====================================-->
+
+    <div class="menu-item">
+      <div class="menu-left">
+
+        <i class="fa-solid fa-cake-candles"></i>
+
+        <div>
+          <h3>ICED  </h3>
+          <p>Iced Americano, Iced Caramel Latte...</p>
+        </div>
+
+      </div>
+
+      <button onclick="openModal('icedModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+  <!-- ================================ قسم 5 -=====================================-->
+<div class="menu-item">
+      <div class="menu-left">
+
+<i class="fa-solid fa-blender"></i>
+
+        <div>
+          <h3>SMOOTHIES   </h3>
+          <p>Mango ,Passion Fruit ...</p>
+        </div>
+      </div>
+
+      <button onclick="openModal('smoothieModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+  <!-- ================================ قسم 6 -=====================================-->
+   <div class="menu-item">
+      <div class="menu-left">
+
+   <i class="fa-solid fa-martini-glass-citrus"></i>
+
+        <div>
+          <h3>MOJITO </h3>
+          <p>Mojito Strawberry, Mojito Mix Berries...</p>
+        </div>
+
+      </div>
+
+<button onclick="openModal('mojitoModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+  <!-- ================================ قسم 7 -=====================================-->
+ <div class="menu-item">
+      <div class="menu-left">
+
+       <i class="fa-solid fa-glass-water"></i>
+
+        <div>
+          <h3>MILKSHAKES </h3>
+          <p>Cookies Milkshake , Vanilla Milkshake...</p>
+        </div>
+
+      </div>
+
+<button onclick="openModal('milkshakeModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+  <!-- ================================ قسم 8 -=====================================-->
+<div class="menu-item">
+      <div class="menu-left">
+
+        <i class="fa-solid fa-glass-water-droplet"></i>
+
+        <div>
+          <h3>FRESH JUICE  </h3>
+          <p>Orange, Lemonade, Lemon Mint...</p>
+        </div>
+
+      </div>
+
+<button onclick="openModal('juiceModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+  <!-- ================================ قسم 9 -=====================================-->
+
+<div class="menu-item">
+      <div class="menu-left">
+
+      <i class="fa-solid fa-bottle-water"></i>
+
+        <div>
+          <h3>SOFT DRINKS </h3>
+          <p>Pepsi, 7up, Mirinda, XXL...</p>
+        </div>
+
+      </div>
+
+<button onclick="openModal('softModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+  <!-- ================================ قسم 10 -=====================================-->
+<div class="menu-item">
+      <div class="menu-left">
+
+        <i class="fa-solid fa-cake-candles"></i>
+
+        <div>
+          <h3>DESSERTS</h3>
+          <p>Lotus Cookies , Red Velvet Cookies...</p>
+        </div>
+
+      </div>
+
+      <button>
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  <!-- ================================ قسم 11 -=====================================-->
+<div class="menu-item">
+      <div class="menu-left">
+
+  <i class="fa-solid fa-smoking"></i>
+
+        <div>
+          <h3>SHISHA</h3>
+          <p>Tanbak Asfahani,Maasal Teffah...</p>
+        </div>
+
+      </div>
+
+<button onclick="openModal('shishaModal')">
+  <i class="fa-solid fa-chevron-right"></i>
+</button>
+    </div>
+
+
+  </section>
+
+  <!-- ========================SPECIALS ================================-->
+  <section class="specials">
+
+    <h2>🔥 OUR SPECIALS</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="images/Iced Macchiato Latte.jpg">
+
+        <div class="card-content">
+          <h3>Iced Macchiato Latte</h3>
+          <p>Smooth mocha flavor with rich espresso taste</p>
+          <span>$4.5</span>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <img src="images/Mocha Latte.jpg">
+
+        <div class="card-content">
+          <h3>Mocha Latte</h3>
+          <p>Refreshing iced latte with bold espresso layers</p>
+          <span>$4</span>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <img src="images/Mocha Frappe.jpg">
+
+        <div class="card-content">
+          <h3>Mocha Frappe</h3>
+          <p>Creamy blended mocha with icy coffee texture</p>
+          <span>$4.5</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h3>THANK YOU!</h3>
+
+    <div class="socials">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+  </footer>
+
+</div>
+<!--============================================= COFFEE MODAL ===============================================-->
+
+<div class="modal" id="coffeeModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('coffeeModal')"> &times; </span>
+
+    <h2>COFFEE</h2>
+
+    <div class="modal-items">
+
+      <div class="drink-card">
+        <img src="images/Single Espresso.jpg">
+        <h3>Single Espresso</h3>
+        <span>$2.00</span>
+      </div>
+
+      <div class="drink-card">
+        <img src="images/Double Espresso.jpg">
+        <h3>Double Espresso</h3>
+        <span>$2.50</span>
+      </div>
+
+      <div class="drink-card">
+        <img src="images/Ristretto.jpg">
+        <h3>Ristretto</h3>
+        <span>$2.50</span>
+      </div>
+
+          <div class="drink-card">
+        <img src="images/Lungo.jpg">
+        <h3>Lungo</h3>
+        <span>$2.50</span>
+      </div>
+
+   <div class="drink-card">
+        <img src="images/Americano.jpg">
+        <h3>Americano  </h3>
+        <span>$3.00</span>
+      </div>
+
+ <div class="drink-card">
+        <img src="images/Turkish Coffee.jpg">
+        <h3>Turkish Coffee   </h3>
+        <span>$3.00</span>
+      </div>
+
+ <div class="drink-card">
+        <img src="images/Piccol.jpg">
+        <h3>Piccol</h3>
+        <span>$3.00</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- ==========================================  HOT DRINKS MODAL =========================================-->
+
+<div class="modal" id="hotModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('hotModal')">
+      &times;
+    </span>
+
+    <h2>HOT DRINKS</h2>
+
+    <div class="modal-items">
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Tea.jpg">
+        <h3>Tea  </h3>
+        <span>$2.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Green Tea.jpg">
+
+        <h3>Green Tea </h3>
+
+        <span>$2.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Ginger.jpg">
+
+        <h3>Ginger </h3>
+
+        <span>$2.00</span>
+      </div>
+
+
+    <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Ginger.jpg">
+
+        <h3>Ginger </h3>
+
+        <span>$2.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Nescafe.jpg">
+
+        <h3>Nescafe </h3>
+
+        <span>$3.00</span>
+      </div>
+
+
+<!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Cappuccino.jpg">
+
+        <h3>Cappuccino  </h3>
+
+        <span>$3.00</span>
+      </div>
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Hot Chocolate.jpg">
+
+        <h3>Hot Chocolate   </h3>
+
+        <span>$4.00</span>
+      </div>
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Matcha.jpg">
+
+        <h3>Matcha   </h3>
+
+        <span>$4.50</span>
+      </div>
+
+           <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Macchiat.jpg">
+
+        <h3>Macchiat   </h3>
+
+        <span>$3.50</span>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- ============================================LATTE MODAL ====================================================-->
+
+<div class="modal" id="latteModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('latteModal')">
+      &times;
+    </span>
+
+    <h2>LATTE</h2>
+
+    <div class="modal-items">
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Caramel Latte.jpg">
+
+        <h3>Caramel Latte </h3>
+
+        <span>$4.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Hazelnut Latte.jpg">
+
+        <h3>Hazelnut Latte </h3>
+
+        <span>$4.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Vanilla Latte.jpg">
+
+        <h3>Vanilla Latte </h3>
+
+        <span>$4.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Mocha Latte.jpg">
+
+        <h3>Mocha Latte </h3>
+
+        <span>$4.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Spanish Latt.jpg">
+
+        <h3>Spanish Latt </h3>
+
+        <span>$4.00</span>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!--=================================== ICED DRINKS MODAL =================================-->
+
+<div class="modal" id="icedModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('icedModal')">
+      &times;
+    </span>
+
+    <h2>ICED</h2>
+
+    <div class="modal-items">
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Iced Americano.jpg">
+
+        <h3>Iced Americano </h3>
+
+        <span>$3.50</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Iced Caramel Latte.jpg">
+
+        <h3>Iced Caramel Latte </h3>
+
+        <span>$4.50</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Iced Macchiato Latte.jpg">
+
+        <h3>Iced Macchiato</h3>
+
+        <span>$4.50</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Iced Spanish Latte.jpg">
+
+        <h3>Iced Spanish Latte </h3>
+
+        <span>$4.50</span>
+      </div>
+
+
+     <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Mocha Frappe.jpg">
+
+        <h3>Mocha Frappe </h3>
+
+        <span>$4.50</span>
+      </div>
+
+
+<!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Caramel Frappe.jpg">
+
+        <h3>Caramel Frappe </h3>
+
+        <span>$4.50</span>
+      </div>
+
+
+<!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Mocha Frappe.jpg">
+
+        <h3>Toffee Nut Frappe </h3>
+
+        <span>$4.50</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Frappuccino ">
+
+        <h3>Frappuccino </h3>
+
+        <span>$4.50</span>
+      </div>
+
+
+  <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Iced Matcha Strawberry.jpg ">
+
+        <h3>Iced Matcha Strawberry   </h3>
+
+        <span>$4.50</span>
+      </div>
+
+
+<!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Iced Matcha Strawberry.jpg ">
+
+        <h3>Iced Matcha Mango </h3>
+
+        <span>$4.50</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Ice Tea Peach.jpg">
+
+        <h3>Ice Tea Peach  </h3>
+
+        <span>$3.50</span>
+      </div>
+
+
+        <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Ice Tea Peach.jpg">
+
+        <h3>Ice Tea Peach  </h3>
+
+        <span>$3.50</span>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!---========================================== SMOOTHIES MODAL======================================== -->
+
+<div class="modal" id="smoothieModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('smoothieModal')">
+      &times;
+    </span>
+
+    <h2>SMOOTHIES</h2>
+
+    <div class="modal-items">
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Mango.jpg">
+
+        <h3>Mango </h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Passion Fruit.jpg">
+
+        <h3>Passion Fruit </h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Peach.jpg">
+
+        <h3>Peach </h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Strawberry.jpg">
+
+        <h3>Strawberry </h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+  <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Kiwi + Apple.jpg">
+
+        <h3>Kiwi + Apple  </h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+  <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Passion + Peach.jpg">
+
+        <h3>Passion + Peach</h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- ===========================MOJITO MODAL====================================== -->
+
+<div class="modal" id="mojitoModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('mojitoModal')">
+      &times;
+    </span>
+
+    <h2>MOJITO</h2>
+
+    <div class="modal-items">
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Mojito Strawberry.jpg">
+
+        <h3>Mojito Strawberry </h3>
+
+        <span>$6.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Mojito Mix Berries.jpg">
+
+        <h3>Mojito Mix Berries </h3>
+
+        <span>$6.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/mojito blueberry.jpg">
+
+        <h3>Mojito blueberry</h3>
+
+        <span>$6.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+
+      <div class="drink-card">
+        <img src="images/Classic Mojit.jpg">
+
+        <h3>Classic Mojit</h3>
+
+        <span>$4.00</span>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!--=================================== MILKSHAKES MODAL ===============================-->
+
+<div class="modal" id="milkshakeModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('milkshakeModal')">
+      &times;
+    </span>
+
+    <h2>MILKSHAKES</h2>
+
+    <div class="modal-items">
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Cookies Milkshake.jpg">
+
+        <h3>Cookies Milkshake </h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Vanilla Milkshake.jpg">
+
+        <h3>Vanilla Milkshake </h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Chocolate Milkshake.jpg">
+
+        <h3>Chocolate Milkshake </h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/vanilla-milkshake.jpg">
+
+        <h3>Strawberry Milkshak</h3>
+
+        <span>$5.00</span>
+      </div>
+
+
+  <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Lotus Milkshake.jpg">
+
+        <h3>Lotus Milkshake </h3>
+
+        <span>$6.00</span>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+<!-- ==========================================FRESH JUICE MODAL============================ -->
+
+<div class="modal" id="juiceModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('juiceModal')">
+      &times;
+    </span>
+
+    <h2>FRESH JUICE</h2>
+
+    <div class="modal-items">
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Orange.jpg">
+
+        <h3>Orange  </h3>
+
+        <span>$2.50</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Lemonade.jpg">
+
+        <h3>Lemonade </h3>
+
+        <span>$22.50</span>
+      </div>
+
+
+      <!-- ITEM -->
+
+      <div class="drink-card">
+        <img src="images/Lemon Mint.jpg">
+
+        <h3>Lemon Mint </h3>
+
+        <span>$3.00</span>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+<!-- ============================SOFT DRINKS MODAL===================================== -->
+
+<div class="modal" id="softModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('softModal')">
+      &times;
+    </span>
+
+    <h2>SOFT DRINKS</h2>
+
+    <div class="modal-items">
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Pepsi.jpg">
+
+        <h3>Pepsi </h3>
+
+        <span>$2.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/7up.jpg">
+
+        <h3>7up </h3>
+
+        <span>$2.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Mirinda.jpg">
+
+        <h3>Mirinda </h3>
+
+        <span>$2.00</span>
+      </div>
+
+
+     <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Mirinda.jpg">
+
+        <h3>Mirinda </h3>
+
+        <span>$2.00</span>
+      </div>
+
+
+
+  <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Red Bull.jpg">
+
+        <h3>Red Bull </h3>
+
+        <span>$3.00</span>
+      </div>
+
+
+  <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/XXL.jpg">
+
+        <h3>XXL </h3>
+
+        <span>$3.00</span>
+      </div>
+
+
+ <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Laziza.jpg">
+
+        <h3>Laziza  </h3>
+
+        <span>$3.00</span>
+      </div>
+
+
+       <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Water.jpg">
+
+        <h3>Water   </h3>
+
+        <span>$0.65</span>
+      </div>
+
+    <!-- ITEM -->
+      <div class="drink-card">
+        <h3>on each item  Mexican Drink     </h3>
+
+        <span>$0.50</span>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+<!-- =============================================SHISHA MODAL =====================================-->
+
+<div class="modal" id="shishaModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal('shishaModal')">
+      &times;
+    </span>
+
+    <h2>SHISHA</h2>
+
+    <div class="modal-items">
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Tanbak Asfahani.jpg">
+
+        <h3>Tanbak Asfahani</h3>
+
+        <span>$6.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Maasal Teffah.jpg">
+
+        <h3>Maasal Teffah</h3>
+
+        <span>$6.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Teffah Idara.jpg">
+
+        <h3>Teffah Idara</h3>
+
+        <span>$7.00</span>
+      </div>
+
+
+      <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Maasal Hamod Naanaa.jpg">
+
+        <h3>Maasal Hamod Naanaa</h3>
+
+        <span>$6.00</span>
+      </div>
+
+
+ <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Maasal Naanaa.jpg">
+
+        <h3>Maasal Naanaa</h3>
+
+        <span>$6.00</span>
+      </div>
+
+
+ <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Maasal 3enab.jpg">
+
+        <h3>Maasal 3enab</h3>
+
+        <span>$6.00</span>
+      </div>
+
+
+ <!-- ITEM -->
+      <div class="drink-card">
+        <img src="images/Maasal 3enab.jpg">
+
+        <h3>Maasal 3enab</h3>
+
+        <span>$6.00</span>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
