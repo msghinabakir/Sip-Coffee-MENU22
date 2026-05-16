@@ -262,21 +262,27 @@ body{
 /* ======================================================================
    SPECIALS
 ============================================================================ */
+/* =========================
+   SPECIALS
+========================= */
+
 .specials{
-    padding:8px 14px 22px;
+    padding:8px 18px 24px;
 }
 
+/* العنوان */
 .specials h2{
     font-family:'Oswald', sans-serif;
     font-size:18px;
     margin-bottom:14px;
-    color:#f3ede7;
+    color:#f5f1ec;
+    font-weight:500;
 }
 
-/* الكروت */
+/* حاوية الكروت */
 .cards{
     display:flex;
-    gap:8px;
+    gap:10px;
 }
 
 /* الكرت */
@@ -285,9 +291,9 @@ body{
 
     background:rgba(255,255,255,0.02);
 
-    border:1px solid rgba(180,140,105,0.18);
+    border:1px solid rgba(255,255,255,0.08);
 
-    border-radius:16px;
+    border-radius:14px;
 
     overflow:hidden;
 }
@@ -305,37 +311,37 @@ body{
     padding:8px;
 }
 
-/* العنوان */
+/* اسم المشروب */
 .card-content h3{
-    font-size:11px;
+    font-family:'Oswald', sans-serif;
+
+    font-size:10px;
 
     line-height:1.3;
 
-    margin-bottom:5px;
+    margin-bottom:4px;
 
-    font-family:'Oswald', sans-serif;
-
-    color:#f5f1ec;
+    color:#f4f1ed;
 
     font-weight:500;
 }
 
 /* الوصف */
 .card-content p{
-    font-size:9px;
+    font-size:8px;
 
-    line-height:1.4;
+    line-height:1.45;
 
-    color:#c5b7ab;
+    color:#b8ada4;
 
     margin-bottom:6px;
 }
 
 /* السعر */
 .card-content span{
-    color:#d8a277;
+    font-size:10px;
 
-    font-size:11px;
+    color:#d7a178;
 
     font-weight:600;
 }
