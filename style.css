@@ -11,7 +11,7 @@
    BODY
 ========================= */
 body{
-  background:#e8dfd7;
+  background:#ece4dc;
 
   font-family:'Poppins', sans-serif;
 
@@ -19,26 +19,30 @@ body{
 
   justify-content:center;
 
-  padding:0px;
+  padding:6px;
 
   color:white;
 }
-
-
 /* =========================
    PHONE CONTAINER
 ========================= */
 .phone-menu{
     width:100%;
-   max-width:390px;
-    background:
-    linear-gradient(to bottom,#1b120e,#17100d,#120c09);
-    border-radius:30px;
-    overflow:hidden;
-    box-shadow:
-    0 10px 35px rgba(0,0,0,0.30);
-}
+    max-width:390px;
 
+    background:
+    linear-gradient(to bottom,
+    #1a120e,
+    #17100d,
+    #130d0a);
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 8px 24px rgba(0,0,0,0.22);
+}
 /* =========================
    NAVBAR
 ========================= */
@@ -139,43 +143,44 @@ body{
    MENU SECTION
 ========================= */
 .menu-section{
-    padding:18px 24px 2px;
+    padding:14px 24px 0px;
 }
-
+/*  عنوان OUR MENUE */
 .menu-section h2{
     text-align:center;
 
     font-family:'Oswald', sans-serif;
 
-    font-size:20px;
+    font-size:19px;
 
-    margin-bottom:18px;
+    margin-bottom:10px;
 
     position:relative;
 
     letter-spacing:1px;
 
     font-weight:500;
+
+    color:#f3eee9;
 }
 
+/* الحط تحت OUR MENUE */
 .menu-section h2::after{
     content:"";
 
     position:absolute;
 
-    width:58px;
+    width:56px;
     height:1px;
 
-    background:#8d6248;
+    background:#8f664b;
 
     left:50%;
 
     transform:translateX(-50%);
 
-    bottom:-7px;
+    bottom:-5px;
 }
-
-
 /* =========================
    MENU ITEMS
 ========================= */
@@ -186,12 +191,11 @@ body{
 
     align-items:center;
 
-    padding:13px 0;
+    padding:12px 0;
 
     border-bottom:
-    1px solid rgba(255,255,255,0.10);
+    1px solid rgba(193,162,132,0.28);
 }
-
 
 /* الجهة اليسار */
 .menu-left{
@@ -219,19 +223,18 @@ body{
 
     font-size:14px;
 
-    color:white;
+    color:#f4ede7;
 
     margin-bottom:1px;
 
     font-weight:500;
 }
 
-
 /* الوصف */
 .menu-left p{
     font-size:11px;
 
-    color:#b0a7a1;
+    color:#b7aaa0;
 
     line-height:1.3;
 }
@@ -239,8 +242,8 @@ body{
 
 /* زر السهم */
 .menu-item button{
-    width:34px;
-    height:34px;
+    width:36px;
+    height:36px;
 
     border:none;
 
@@ -256,9 +259,6 @@ body{
 
     transition:0.3s;
 }
-
-
-
 /* =========================
    SPECIALS
 ========================= */
