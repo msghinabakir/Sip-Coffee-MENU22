@@ -259,63 +259,90 @@ body{
 
     transition:0.3s;
 }
-/* =========================
+/* ======================================================================
    SPECIALS
-========================= */
+============================================================================ */
 
 .specials{
-    padding:10px 24px 30px;
+    padding:14px 18px 28px;
 }
 
 .specials h2{
     font-family:'Oswald', sans-serif;
-    font-size:28px;
-    margin-bottom:18px;
+    font-size:22px;
+    margin-bottom:16px;
+    color:#f3ede7;
 }
 
 /* الكروت */
 .cards{
     display:flex;
-    gap:12px;
+    gap:10px;
 }
 
+/* الكرت */
 .card{
     flex:1;
 
-    background:rgba(255,255,255,0.03);
+    background:
+    rgba(255,255,255,0.025);
 
-    border:1px solid rgba(255,255,255,0.08);
+    border:
+    1px solid rgba(180,140,105,0.22);
 
-    border-radius:16px;
+    border-radius:18px;
 
     overflow:hidden;
 }
 
+/* الصور */
 .card img{
     width:100%;
-    height:130px;
+
+    height:120px;
+
     object-fit:cover;
+
+    display:block;
 }
 
+/* محتوى الكرت */
 .card-content{
-    padding:12px;
+    padding:10px 10px 12px;
 }
 
+/* العنوان */
 .card-content h3{
-    font-size:18px;
-    margin-bottom:8px;
-    font-family:'Oswald', sans-serif;
-}
-
-.card-content p{
     font-size:13px;
-    line-height:1.5;
-    color:#c9c9c9;
+
+    line-height:1.35;
+
+    margin-bottom:6px;
+
+    font-family:'Oswald', sans-serif;
+
+    color:#f5f1ec;
+
+    font-weight:500;
 }
 
+/* الوصف */
+.card-content p{
+    font-size:11px;
+
+    line-height:1.45;
+
+    color:#c5b7ab;
+
+    margin-bottom:8px;
+}
+
+/* السعر */
 .card-content span{
     color:#d8a277;
-    font-size:18px;
+
+    font-size:14px;
+
     font-weight:600;
 }
 
