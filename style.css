@@ -19,7 +19,7 @@ body{
 
   justify-content:center;
 
-  padding:14px;
+  padding:0px;
 
   color:white;
 }
@@ -29,7 +29,8 @@ body{
    PHONE CONTAINER
 ========================= */
 .phone-menu{
-    width:390px;
+    width:100%;
+   max-width:390px;
     background:
     linear-gradient(to bottom,#1b120e,#17100d,#120c09);
     border-radius:30px;
