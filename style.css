@@ -32,19 +32,24 @@ body{
    NAVBAR
 ========================= */
 .navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:25px 22px;
-  background:#140c08;
-}
+    background: #140909;
+    padding: 15px 30px;   /* كان كبير */
+    height: 90px;         /* صغرنا الارتفاع */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 .logo{
   font-family:'Oswald', sans-serif;
   font-size:38px;
   font-weight:700;
   line-height:0.9;
   color:white;
+     width: 120px;
 }
 
 .logo img{
@@ -86,7 +91,13 @@ body{
   background:#9c6a48;
   border-radius:20px;
 }
-
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
 /* =========================
    HERO
 ========================= */
@@ -96,12 +107,12 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     align-items: center;
-
     padding-left: 60px;
     color: white;
+    margin-top: 0;
+    padding-top: 40px;
 }
 
 .hero h1{
