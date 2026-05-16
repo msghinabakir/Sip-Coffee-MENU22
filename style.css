@@ -20,20 +20,27 @@ body{
    PHONE CONTAINER
 ========================= */
 .phone-menu{
-  width:390px;
-  background:
-  linear-gradient(to bottom,#140d09,#1a120e,#120d0b);
-  border-radius:30px;
-  overflow:hidden;
-  box-shadow:0 0 30px rgba(0,0,0,0.7);
+    width:390px;
+
+    background:
+    linear-gradient(to bottom,#140d09,#1a120e,#120d0b);
+
+    border-radius:28px;
+    overflow:hidden;
+
+    box-shadow:0 0 25px rgba(0,0,0,0.55);
 }
+
+
 /* =========================
    NAVBAR
 ========================= */
 .navbar{
-    background:#140909;
-    height:70px;
-    padding:0 22px;
+    background:#120807;
+
+    height:62px;
+
+    padding:0 18px;
 
     display:flex;
     justify-content:space-between;
@@ -42,164 +49,202 @@ body{
 
 /* اللوغو */
 .logo img{
-    width:95px;
-    object-fit:contain;
+    width:82px;
     display:block;
+    object-fit:contain;
 }
 
-/* كلمة menu */
+/* MENU */
 .nav-links{
     list-style:none;
 }
 
 .nav-links .active{
     font-family:'Oswald', sans-serif;
-    font-size:18px;
+    font-size:16px;
     letter-spacing:1px;
     color:white;
     position:relative;
+    font-weight:500;
 }
 
 .nav-links .active::after{
     content:"";
+
     position:absolute;
+
     left:50%;
     transform:translateX(-50%);
-    bottom:-10px;
 
-    width:58px;
-    height:3px;
+    bottom:-8px;
+
+    width:52px;
+    height:2px;
 
     background:#9c6a48;
+
     border-radius:20px;
 }
+
 
 /* =========================
    HERO
 ========================= */
 .hero{
-    height:295px;
+    height:285px;
 
     background-image:
-    linear-gradient(rgba(0,0,0,0.15),
-    rgba(0,0,0,0.15)),
+    linear-gradient(rgba(0,0,0,0.12),
+    rgba(0,0,0,0.12)),
     url("images/background.jpg");
 
     background-size:cover;
+
     background-position:center;
+
     background-repeat:no-repeat;
 
     display:flex;
+
     align-items:center;
 
-    padding-left:24px;
+    padding-left:22px;
 }
 
-/* النص */
 .hero .text{
     width:48%;
 }
 
-/* GOOD COFFEE */
 .hero h1{
     font-family:'Oswald', sans-serif;
-    font-size:34px;
-    line-height:1.15;
-    font-weight:600;
-    color:white;
 
-    margin-bottom:12px;
+    font-size:31px;
+
+    line-height:1.12;
+
+    font-weight:600;
+
+    margin-bottom:10px;
 }
 
-/* Made with love */
 .hero p{
-    font-size:20px;
+    font-size:17px;
+
     color:#b67b5c;
+
     font-family:cursive;
 }
+
 
 /* =========================
    MENU SECTION
 ========================= */
 .menu-section{
-    padding:24px 24px 10px;
+    padding:22px 22px 5px;
 }
 
 .menu-section h2{
     text-align:center;
+
     font-family:'Oswald', sans-serif;
-    font-size:26px;
-    margin-bottom:28px;
+
+    font-size:23px;
+
+    margin-bottom:22px;
+
     position:relative;
+
     letter-spacing:1px;
+
+    font-weight:500;
 }
 
 .menu-section h2::after{
     content:"";
+
     position:absolute;
 
-    width:70px;
+    width:62px;
     height:2px;
 
     background:#9c6a48;
 
     left:50%;
+
     transform:translateX(-50%);
-    bottom:-10px;
+
+    bottom:-8px;
 }
 
 /* كل قسم */
 .menu-item{
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
-    padding:18px 0;
+    padding:15px 0;
 
-    border-bottom:1px solid rgba(255,255,255,0.08);
+    border-bottom:
+    1px solid rgba(255,255,255,0.06);
 }
 
 /* الجهة اليسار */
 .menu-left{
     display:flex;
+
     align-items:center;
-    gap:16px;
+
+    gap:14px;
 }
 
 /* الايقونات */
 .menu-left i{
-    font-size:24px;
+    font-size:20px;
+
     color:#d1b08f;
-    width:28px;
+
+    width:24px;
 }
 
 /* العنوان */
 .menu-left h3{
     font-family:'Oswald', sans-serif;
-    font-size:17px;
+
+    font-size:15px;
+
     color:white;
+
     margin-bottom:2px;
+
+    font-weight:500;
 }
 
 /* الوصف */
 .menu-left p{
-    font-size:13px;
-    color:#a9a9a9;
-    line-height:1.4;
+    font-size:12px;
+
+    color:#9f9f9f;
+
+    line-height:1.35;
 }
 
 /* زر السهم */
 .menu-item button{
-    width:44px;
-    height:44px;
+    width:38px;
+    height:38px;
 
     border:none;
+
     border-radius:50%;
 
     background:#8a5f42;
+
     color:white;
 
-    font-size:14px;
+    font-size:12px;
+
     cursor:pointer;
 
     transition:0.3s;
@@ -208,7 +253,6 @@ body{
 .menu-item button:hover{
     background:#a06d49;
 }
-
 /* =========================
    SPECIALS
 ========================= */
