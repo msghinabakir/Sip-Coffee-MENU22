@@ -345,36 +345,36 @@ body{
 
     font-weight:600;
 }
-/* =========================
+/* =============================================================
    FOOTER
-========================= */
+========================================================== */
 footer{
-  margin-top:10px;
-  background:linear-gradient(to right,#6b4b37,#8d6248);
-  padding:22px;
+  margin-top:8px;
+
+  background:linear-gradient(to right,#7a5741,#9a6d50);
+
+  height:95px;
+
   display:flex;
-  justify-content:space-between;
+
+  justify-content:flex-start;
+
   align-items:center;
+
+  padding-left:22px;
 }
 
+/* THANK YOU */
 footer h3{
   font-family:'Oswald', sans-serif;
-  font-size:30px;
-}
 
-.socials{
-  display:flex;
-  gap:15px;
-}
+  font-size:18px;
 
-.socials i{
-  font-size:26px;
-  cursor:pointer;
-  transition:0.3s;
-}
+  font-weight:500;
 
-.socials i:hover{
-  transform:scale(1.15);
+  letter-spacing:1px;
+
+  color:#f5f1ec;
 }
 /* ============================================================================
    MODAL
