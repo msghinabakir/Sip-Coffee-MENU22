@@ -7,302 +7,402 @@
   box-sizing:border-box;
 }
 
+/* =========================
+   BODY
+========================= */
 body{
-  background:#111;
+  background:#ece4dc;
+
   font-family:'Poppins', sans-serif;
+
   display:flex;
+
   justify-content:center;
-  padding:20px;
+
+  padding:6px;
+
   color:white;
 }
-
 /* =========================
    PHONE CONTAINER
 ========================= */
 .phone-menu{
-  width:390px;
-  background:
-  linear-gradient(to bottom,#140d09,#1a120e,#120d0b);
-  border-radius:30px;
-  overflow:hidden;
-  box-shadow:0 0 30px rgba(0,0,0,0.7);
-}
+    width:100%;
+    max-width:390px;
 
+    background:
+    linear-gradient(to bottom,
+    #1a120e,
+    #17100d,
+    #130d0a);
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 8px 24px rgba(0,0,0,0.22);
+}
 /* =========================
    NAVBAR
 ========================= */
 .navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:25px 22px;
-  background:#140c08;
+    background:#120807;
+    height:62px;
+    padding:0 18px;
+    display:flex;
+    justify-content:space-between;
+      align-items:center;
 }
 
-.logo{
-  font-family:'Oswald', sans-serif;
-  font-size:38px;
-  font-weight:700;
-  line-height:0.9;
-  color:white;
-}
-
+/* اللوغو */
 .logo img{
-  width:120px;
-  object-fit:contain;
+    width:82px;
+    display:block;
+    object-fit:contain;
 }
 
-.logo span{
-  display:block;
-}
-
+/* MENU */
 .nav-links{
-  list-style:none;
-  font-size:18px;
-  color:white;
-  font-weight:600;
-}
-
-.nav-links li{
-  position:relative;
-  cursor:pointer;
+    list-style:none;
 }
 
 .nav-links .active{
-  position:relative;
-  color:white;
-  font-family:'Oswald', sans-serif;
-  letter-spacing:1px;
+    font-family:'Oswald', sans-serif;
+    font-size:16px;
+    letter-spacing:1px;
+    color:white;
+    position:relative;
+    font-weight:500;
 }
 
 .nav-links .active::after{
-  content:"";
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-  bottom:-12px;
-  width:70px;
-  height:3px;
-  background:#9c6a48;
-  border-radius:20px;
+    content:"";
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-8px;
+    width:52px;
+    height:2px;
+    background:#9c6a48;
+    border-radius:20px;
+}
+.nav-links a{
+    text-decoration:none;
 }
 
 /* =========================
    HERO
 ========================= */
 .hero{
-  height:330px;
-  background:
-  linear-gradient(rgba(0,0,0,0.45),
-  rgba(0,0,0,0.45)),
-  url("images/coffee-bg.jpg");
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  align-items:center;
-  padding:30px;
+    height:270px;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.14),
+    rgba(0,0,0,0.14)),
+    url("images/background.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:20px;
 }
 
-.hero-text h1{
-  font-family:'Oswald', sans-serif;
-  font-size:54px;
-  line-height:1.05;
-  letter-spacing:1px;
-  margin-bottom:10px;
+.hero h1{
+    font-family:'Oswald', sans-serif;
+
+    font-size:28px;
+
+    line-height:1.08;
+
+    font-weight:600;
+
+    margin-bottom:8px;
 }
 
-.hero-text p{
-  font-size:40px;
-  color:#b27a54;
-  font-family:cursive;
-}
+.hero p{
+    font-size:16px;
 
+    color:#b67b5c;
+
+    font-family:cursive;
+}
 /* =========================
    MENU SECTION
 ========================= */
 .menu-section{
-  padding:30px 22px;
+    padding:14px 24px 0px;
 }
-
+/*  عنوان OUR MENUE */
 .menu-section h2{
-  text-align:center;
-  font-family:'Oswald', sans-serif;
-  font-size:34px;
-  margin-bottom:30px;
-  position:relative;
+    text-align:center;
+
+    font-family:'Oswald', sans-serif;
+
+    font-size:19px;
+
+    margin-bottom:10px;
+
+    position:relative;
+
+    letter-spacing:1px;
+
+    font-weight:500;
+
+    color:#f3eee9;
 }
 
+/* الحط تحت OUR MENUE */
 .menu-section h2::after{
-  content:"";
-  position:absolute;
-  width:90px;
-  height:3px;
-  background:#8c5d3d;
-  left:50%;
-  transform:translateX(-50%);
-  bottom:-10px;
-}
+    content:"";
 
+    position:absolute;
+
+    width:56px;
+    height:1px;
+
+    background:#8f664b;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    bottom:-5px;
+}
+/* =========================
+   MENU ITEMS
+========================= */
 .menu-item{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:22px 0;
-  border-bottom:1px solid rgba(255,255,255,0.12);
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 0;
+
+    border-bottom:
+    1px solid rgba(193,162,132,0.28);
 }
 
+/* الجهة اليسار */
 .menu-left{
-  display:flex;
-  gap:18px;
-  align-items:center;
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
 }
 
+
+/* الايقونات */
 .menu-left i{
-  font-size:30px;
-  color:#d3b08d;
+    font-size:19px;
+
+    color:#d2b394;
+
+    width:24px;
 }
 
+
+/* العنوان */
 .menu-left h3{
-  font-family:'Oswald', sans-serif;
-  font-size:30px;
-  margin-bottom:3px;
+    font-family:'Oswald', sans-serif;
+
+    font-size:14px;
+
+    color:#f4ede7;
+
+    margin-bottom:1px;
+
+    font-weight:500;
 }
 
+/* الوصف */
 .menu-left p{
-  font-size:15px;
-  color:#b9b9b9;
+    font-size:11px;
+
+    color:#b7aaa0;
+
+    line-height:1.3;
 }
 
+
+/* زر السهم */
 .menu-item button{
-  width:46px;
-  height:46px;
-  border:none;
-  border-radius:50%;
-  background:#7a543b;
-  color:white;
-  font-size:16px;
-  cursor:pointer;
-  transition:0.3s;
-}
+    width:36px;
+    height:36px;
 
-.menu-item button:hover{
-  background:#a06d49;
-  transform:scale(1.08);
-}
+    border:none;
 
+    border-radius:50%;
+
+    background:#8d6248;
+
+    color:white;
+
+    font-size:11px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+/* ======================================================================
+   SPECIALS
+============================================================================ */
 /* =========================
    SPECIALS
 ========================= */
+
 .specials{
-  padding:15px 22px 35px;
+    padding:8px 18px 24px;
 }
 
+/* العنوان */
 .specials h2{
-  text-align:center;
-  font-family:'Oswald', sans-serif;
-  font-size:34px;
-  margin-bottom:25px;
+    font-family:'Oswald', sans-serif;
+    font-size:18px;
+    margin-bottom:14px;
+    color:#f5f1ec;
+    font-weight:500;
 }
 
+/* حاوية الكروت */
 .cards{
-  display:flex;
-  gap:16px;
+    display:flex;
+    gap:10px;
 }
 
+/* الكرت */
 .card{
-  flex:1;
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.1);
-  border-radius:18px;
-  overflow:hidden;
-  backdrop-filter:blur(4px);
+    flex:1;
+
+    background:rgba(255,255,255,0.02);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:14px;
+
+    overflow:hidden;
 }
 
+/* الصورة */
 .card img{
-  width:100%;
-  height:170px;
-  object-fit:cover;
+    width:100%;
+    height:95px;
+    object-fit:cover;
+    display:block;
 }
 
+/* المحتوى */
 .card-content{
-  padding:15px;
+    padding:8px;
 }
 
+/* اسم المشروب */
 .card-content h3{
-  font-family:'Oswald', sans-serif;
-  font-size:28px;
-  margin-bottom:8px;
+    font-family:'Oswald', sans-serif;
+
+    font-size:10px;
+
+    line-height:1.3;
+
+    margin-bottom:4px;
+
+    color:#f4f1ed;
+
+    font-weight:500;
 }
 
+/* الوصف */
 .card-content p{
-  font-size:14px;
-  color:#d0d0d0;
-  line-height:1.5;
-  margin-bottom:12px;
+    font-size:8px;
+
+    line-height:1.45;
+
+    color:#b8ada4;
+
+    margin-bottom:6px;
 }
 
+/* السعر */
 .card-content span{
-  color:#d8a277;
-  font-size:24px;
-  font-weight:600;
-}
+    font-size:10px;
 
-/* =========================
+    color:#d7a178;
+
+    font-weight:600;
+}
+/* =============================================================
    FOOTER
-========================= */
+========================================================== */
 footer{
-  margin-top:10px;
-  background:linear-gradient(to right,#6b4b37,#8d6248);
-  padding:22px;
+  margin-top:8px;
+
+  background:linear-gradient(to right,#7a5741,#9a6d50);
+
+  height:95px;
+
   display:flex;
-  justify-content:space-between;
+
+  justify-content:flex-start;
+
   align-items:center;
+
+  padding-left:22px;
 }
 
+/* THANK YOU */
 footer h3{
   font-family:'Oswald', sans-serif;
-  font-size:30px;
-}
 
-.socials{
-  display:flex;
-  gap:15px;
-}
+  font-size:18px;
 
-.socials i{
-  font-size:26px;
-  cursor:pointer;
-  transition:0.3s;
-}
+  font-weight:500;
 
-.socials i:hover{
-  transform:scale(1.15);
+  letter-spacing:1px;
+
+  color:#f5f1ec;
 }
 /* ============================================================================
    MODAL
 ================================================================================== */
-
 .modal{
   position:fixed;
   inset:0;
   background:rgba(0,0,0,0.75);
   display:none;
   justify-content:center;
-  align-items:center;
+  align-items:flex-start;
+  overflow-y:auto;
   z-index:999;
-  padding:20px;
+  padding:20px 12px;
 }
 
 .modal-content{
   width:100%;
-  max-width:380px;
+
+  max-width:340px;
+
   background:linear-gradient(to bottom,#1a110d,#120c09);
-  border-radius:25px;
-  padding:25px;
+
+  border-radius:24px;
+
+  padding:18px;
+
   position:relative;
+
+  margin-top:80px;
+
+  margin-bottom:30px;
+
   animation:popup 0.3s ease;
 }
-
 @keyframes popup{
   from{
     transform:scale(0.7);
@@ -336,29 +436,67 @@ footer h3{
   gap:18px;
 }
 
+
 .drink-card{
-  background:rgba(255,255,255,0.04);
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:flex-start;
+
+  background:#211613;
+
   border-radius:18px;
-  overflow:hidden;
-  border:1px solid rgba(255,255,255,0.08);
+
+  padding:12px;
+
+  border:1px solid rgba(255,255,255,0.06);
+
+  margin-bottom:14px;
 }
 
+/* الصورة */
 .drink-card img{
-  width:100%;
-  height:170px;
+  width:110px;
+
+  height:110px;
+
+  border-radius:16px;
+
   object-fit:cover;
+
+  order:2;
 }
 
-.drink-card h3{
-  padding:12px 15px 5px;
-  font-size:24px;
+/* النص */
+.drink-info{
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:space-between;
+
+  height:110px;
+
+  order:1;
+}
+
+/* الاسم */
+.drink-info h3{
   font-family:'Oswald', sans-serif;
+
+  font-size:24px;
+
+  color:white;
+
+  line-height:1.1;
 }
 
-.drink-card span{
-  display:block;
-  padding:0 15px 15px;
+/* السعر */
+.drink-info span{
   color:#d8a277;
-  font-size:20px;
+
+  font-size:24px;
+
   font-weight:600;
 }
